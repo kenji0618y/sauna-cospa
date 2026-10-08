@@ -17,9 +17,17 @@
 - DNS（ConoHa）は変更なし。www の CNAME `kenji0618y.github.io` はプロジェクトリポジトリの独自ドメインでもGitHub推奨どおり。
 - 確認：トップ・/reviews/・/map/・/sauna-university/・/sauna-daigaku.html・sitemap.xml・robots.txt・日本語URL・/?page_id=37 が200、存在しないURLは404、www と http は https://sauna-cospa.com/ へ301。kenji0618y.github.io/kekkon-roadmap/ と /henshu-lock/ は github.io で200に戻った。
 
+## 移動後の点検とサイトマップ整理（2026-10-08・Claude）
+
+- 利用者の依頼（「問題あれば直して」）で、Grokの移動作業のあとを点検した。
+- 点検結果：サイトマップ掲載の全ページが `server: GitHub.com` で200。Amazonの必須表記は地図と転送用2ページ以外の全ページ、Amazon枠はレビュー47本すべてにある。存在しないパスでも http→https の301を確認（HTTPS強制は sauna-cospa 側でも有効）。証明書は sauna-cospa.com・www とも有効（期限2027-01-04、GitHubが自動更新）。DNS（A 4件・www CNAME）とメール（MX・SPF）は変化なし。`kenji0618y.github.io/sauna-cospa/` は `https://sauna-cospa.com/` へ301。kekkon-roadmap・henshu-lock は `kenji0618y.github.io` で200、旧サイトのURLは同じパスのまま sauna-cospa.com へ転送される。
+- サウナのサイトのサービスワーカーは範囲が `/sauna-daigaku.html` だけ（しかも `/sauna-sw.js` は無く登録されない）なので、github.io 時代に他のアプリへ影響した可能性はない。
+- 修正：`sitemap.xml` から、`noindex` の転送用ページ2件（`オアシスサウナ-アスティル-2/`・`上野ステーションホステル-オリエンタル2-2/`）を外した（62→60件）。正式URLは掲載済み。判断と理由：検索エンジンに出さないページをサイトマップで送ると、Search Consoleで「noindex なのに送信された」というエラーになるため。
+- 未確認：10/6夕方〜10/8朝に結婚ロードマップを sauna-cospa.com 側で開いて新しく入力した内容があれば、その端末の sauna-cospa.com 側に残っている可能性がある（同期キー未設定の場合）。利用者に有無を確認中。
+
 このファイルは、サイトの現在の状況やできていること、次にやることを記録するためのドキュメントです。
 
-最終更新：2026-10-08（Grok Bot：サイトを kenji0618y/sauna-cospa へ移し、独自ドメインを付け替え）
+最終更新：2026-10-08（Claude：移動後の点検・サイトマップ整理）
 
 ## 独自ドメイン sauna-cospa.com をGitHub Pagesへ切替（2026-10-06・Claude）※完了・30日監視中
 
