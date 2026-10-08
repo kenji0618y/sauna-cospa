@@ -179,7 +179,7 @@
     </section>
 
     <section class="gate" aria-label="進めない条件"><div><strong>バックアップなし</strong><br>削除・移動・DNS変更をしない</div><div><strong>メール管理先が不明</strong><br>DNSを変更しない</div><div><strong>重大な404や表示崩れ</strong><br>独自ドメインを切り替えない</div></section>
-    <footer>最終更新：2026-10-06 ｜ 詳細と判断理由は「GitHub移行ロードマップ.md」と「STATE.md」に記録</footer>
+    <footer>最終更新：2026-10-08 ｜ 詳細と判断理由は「GitHub移行ロードマップ.md」と「STATE.md」に記録</footer>
   </main>
 
   <script>
@@ -190,7 +190,7 @@
       3: ["完了", "テスト公開", "本番と同じ操作を一時URLで確認しました。", ["✓ 公開方法を決定", "✓ ルートURLでトップとCSSを確認", "✓ 未ログインで地図を開けることを確認", "✓ 390px幅で主要5ページ・MENUを確認", "✓ スマホMENU修正を公開URLで再確認", "✓ 404・問い合わせを確認", "✓ 内部参照1,495件の不足0"]],
       4: ["完了", "ドメイン切替準備", "メールを守りながら公開先を変更できる手順を作りました。", ["✓ DNS値を保存", "✓ 独自ドメインを検証（GitHubのDNSチェック成功）", "✓ Web用設定だけを変える計画", "✓ ConoHaへ戻す手順を記録"]],
       5: ["今ここ", "切替・30日監視", "sauna-cospa.comをGitHub版へ切り替えました。30日間、安定しているかを確認します。", ["✓ DNSを切替（10月6日）", "✓ 証明書の発行とHTTPS強制を確認", "✓ 主要ページ・日本語URL・404を確認", "✓ メール設定（MX・SPF・DKIM）が変わっていないことを確認", "404とアクセス解析を監視（〜11月5日ごろ）", "修正はGitHubだけで実施"]],
-      6: ["予定", "ConoHa終了", "依存がないことを確認して費用を止めます。Amazonの本審査が終わるまでは解約しません。", ["DNSの置き場所（今はConoHa）とメールの扱いを決める", "依存0件を再確認", "最終バックアップを2か所に保存", "ドメインとメールへの影響を確認", "解約日をSTATE.mdへ記録"]]
+      6: ["予定", "ConoHa終了", "WINGパックの自動更新をOFFにして、契約満了日（2027年7月1日）で終わらせます。ConoHaのアカウントとドメインは残します。", ["WINGパックの自動更新をOFF（2027年6月1日より前）", "ドメインの自動更新はONのまま", "DNSの置き場所（今はConoHa）とメールの扱いを決める", "依存0件を再確認", "最終バックアップを2か所に保存", "ドメインとメールへの影響を確認", "解約日をSTATE.mdへ記録"]]
     };
     document.querySelectorAll(".phase").forEach(button => button.addEventListener("click", () => {
       document.querySelectorAll(".phase").forEach(item => item.classList.remove("current"));
