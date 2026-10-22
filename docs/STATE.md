@@ -696,3 +696,9 @@ WordPress（`https://sauna-cospa.com`）から書き出したもので、ConoHa�
 - 次の1手：一般訪問者がGoogleログインなしで使える地図方式を決定し、その後GitHub Pagesのテスト公開へ進む。
 - 判断理由：画像を先に配置・確認してからHTMLを切り替える順序にし、参照先の画像切れを防ぐため。
 - 戻し方：問題があれば `0f89c3b` を戻すとHTMLだけ旧ConoHa画像URLへ戻せる。画像追加 `146bfa6` は表示に影響しないため、そのまま保管してもよい。
+
+## 2026-10-22 独自ドメイン sauna-cospa.com を外し、GitHub無料アドレスへ移行
+- 新URL: https://kenji0618y.github.io/sauna-cospa/ （理由：ドメイン不要・月額費用ゼロにするため。ConoHa WING自動更新OFF済、ドメイン期限2027-06-14）
+- CNAME削除、Pages設定のカスタムドメイン削除。全HTML/CSS/JS/XMLのルート絶対パス "/..." を "/sauna-cospa/..." に、https://sauna-cospa.com を新URLに置換（docs/ と scripts/ は対象外）。
+- kenji0618y.github.io（旧リポ）の転送先も新URLへ変更。CNAMEは足していない。
+- 注意：scripts/gen_reviews.py は旧パスのまま。再生成するときは /sauna-cospa/ 前提に直すこと。
