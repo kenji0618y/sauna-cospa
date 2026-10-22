@@ -75,7 +75,7 @@ def place(x):
 
 rows = []
 for x in items:
-    href = "/" + x["slug"] + "/"
+    href = "/sauna-cospa/" + x["slug"] + "/"
     tag = '<span class="closed-tag">閉店</span>' if x["closed"] else ""
     chips = ""
     q = x["name"] + ((" " + x["pref"]) if x["pref"] else "")
@@ -114,7 +114,7 @@ if os.path.exists(os.path.join(ROOT, COLUMN_SLUG, "index.html")):
         '</div>'
         '</div>'.format(
             date=e(date_by_slug.get(COLUMN_SLUG, "")[5:].replace("-", ".")),
-            href=quote("/" + COLUMN_SLUG + "/", safe="/"),
+            href=quote("/sauna-cospa/" + COLUMN_SLUG + "/", safe="/"),
             title=e(title_by_slug.get(COLUMN_SLUG, "サウナのふるさと納税"))))
 
 DESC = "GOMIRACHELINが実際に訪問して10項目で採点した、全国%d軒のサウナ正直レビュー一覧。新着順に、総合・コスパ・タイパのスコアつきで掲載しています。" % len(items)
