@@ -126,11 +126,11 @@ page = """<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>レビュー一覧 | GOMIRACHELIN</title>
   <meta name="description" content="{desc}">
-  <link rel="canonical" href="https://sauna-cospa.com/reviews/">
+  <link rel="canonical" href="https://kenji0618y.github.io/sauna-cospa/reviews/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/sauna-cospa/css/site.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GTF2GM6DNJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -150,7 +150,7 @@ page = """<!DOCTYPE html>
 <input type="checkbox" id="nav-check">
 <header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="/">
+    <a class="brand" href="/sauna-cospa/">
       <span class="mark">G</span>
       <span>
         <b>GOMIRACHELIN</b>
@@ -159,12 +159,12 @@ page = """<!DOCTYPE html>
     </a>
     <button class="nav-toggle" type="button" onclick="document.getElementById('nav-check').click()" aria-label="メニュー">MENU</button>
     <nav class="nav-links" aria-label="メインメニュー">
-        <a href="/">トップ</a>
-        <a href="/why/">WHY</a>
-        <a href="/ランキング/">ランキング</a>
-        <a href="/sauna-university/">サウナ大学</a>
-        <a href="/map/">サウナ地図</a>
-        <a href="/お問い合わせ/">お問い合わせ</a>
+        <a href="/sauna-cospa/">トップ</a>
+        <a href="/sauna-cospa/why/">WHY</a>
+        <a href="/sauna-cospa/ランキング/">ランキング</a>
+        <a href="/sauna-cospa/sauna-university/">サウナ大学</a>
+        <a href="/sauna-cospa/map/">サウナ地図</a>
+        <a href="/sauna-cospa/お問い合わせ/">お問い合わせ</a>
     </nav>
   </div>
 </header>
@@ -176,7 +176,7 @@ page = """<!DOCTYPE html>
   <div class="entry-body">
 <h2 style="color:#d4a017;font-size:1.3em;">一軒ずつ、正直に。</h2>
 <p>GOMIRACHELINが実際に足を運んで、①サウナ室②水風呂③休憩④動線⑤ロウリュ⑥スパ内施設⑦スパ外施設⑧清潔さ⑨唯一無二性⑩ホスピタリティの10項目で採点した、全{n}軒の正直レビューです。新しく書いたものから順に並べています。</p>
-<p>スコアの高い順に見たいときは<a href="/%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">ランキング</a>を、10項目それぞれの採点を見比べたいときは<a href="/10%E9%A0%85%E7%9B%AE%E5%88%A5%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">EVALUATION</a>をご覧ください。</p>
+<p>スコアの高い順に見たいときは<a href="/sauna-cospa/%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">ランキング</a>を、10項目それぞれの採点を見比べたいときは<a href="/sauna-cospa/10%E9%A0%85%E7%9B%AE%E5%88%A5%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">EVALUATION</a>をご覧ください。</p>
 </div>
 <section class="ranking-static" id="reviews" aria-label="サウナレビュー一覧">
   <div class="section-head">
@@ -190,7 +190,7 @@ page = """<!DOCTYPE html>
   <p class="more-note num">全 {n} 施設</p>
 {columnblock}
   <div class="more-link">
-    <a href="/%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">RANKING ›</a>
+    <a href="/sauna-cospa/%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">RANKING ›</a>
   </div>
   <p class="foot-note">点数は管理人の主観による評価です ／ 掲載スコアは訪問時点のもの ／ ※当サイトはアフィリエイトプログラムを利用しています</p>
 </section>
@@ -203,14 +203,14 @@ page = """<!DOCTYPE html>
       <div class="sub">Cospa Sauna Guide</div>
     </div>
     <ul class="footer-links">
-          <li><a href="/why/">WHY</a></li>
-          <li><a href="/%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">ランキング</a></li>
-          <li><a href="/10%E9%A0%85%E7%9B%AE%E5%88%A5%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">EVALUATION</a></li>
-          <li><a href="/sauna-university/">サウナ大学</a></li>
-          <li><a href="/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/">お問い合わせ</a></li>
-          <li><a href="/%E9%81%8B%E5%96%B6%E8%80%85%E6%83%85%E5%A0%B1/">運営者情報</a></li>
-          <li><a href="/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/">プライバシーポリシー</a></li>
-          <li><a href="/%E5%85%8D%E8%B2%AC%E4%BA%8B%E9%A0%85/">免責事項</a></li>
+          <li><a href="/sauna-cospa/why/">WHY</a></li>
+          <li><a href="/sauna-cospa/%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">ランキング</a></li>
+          <li><a href="/sauna-cospa/10%E9%A0%85%E7%9B%AE%E5%88%A5%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">EVALUATION</a></li>
+          <li><a href="/sauna-cospa/sauna-university/">サウナ大学</a></li>
+          <li><a href="/sauna-cospa/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/">お問い合わせ</a></li>
+          <li><a href="/sauna-cospa/%E9%81%8B%E5%96%B6%E8%80%85%E6%83%85%E5%A0%B1/">運営者情報</a></li>
+          <li><a href="/sauna-cospa/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/">プライバシーポリシー</a></li>
+          <li><a href="/sauna-cospa/%E5%85%8D%E8%B2%AC%E4%BA%8B%E9%A0%85/">免責事項</a></li>
     </ul>
     <p class="footer-note">Amazonのアソシエイトとして、GOMIRACHELINは適格販売により収入を得ています。</p>
     <p class="footer-copy">© 2026 GOMIRACHELIN　コスパで選ぶ、全国サウナ正直ガイド</p>
